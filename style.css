@@ -1,0 +1,582 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  background: #ff6b35;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+/* ================= HOME ================= */
+.home {
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  gap: 40px;
+
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("images/makanan.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home-text {
+  max-width: 500px;
+}
+
+.home-text h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.home-text p {
+  font-size: 16px;
+}
+
+.home img {
+  width: 350px;
+  border-radius: 15px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff6b35;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff814f;
+}
+
+.home animate {
+  min-height: 100vh; /* biar section memenuhi layar */
+  background: url("images/BG home.jpg ") no-repeat center center;
+  background-size: cover; /* biar gambar memenuhi seluruh section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* posisi teks di tengah vertikal */
+  align-items: center;     /* posisi teks di tengah horizontal */
+  color: white;            /* teks agar terlihat di atas background */
+  text-align: center;
+  padding: 0 20px;         /* jarak sisi untuk teks */
+}
+
+/* ================= OUR MENU ================= */
+.menu {
+  padding: 80px 40px;
+  text-align: center;
+  background: url(images/BG\ menu.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.menu-header {
+  display: inline-block;          /* kotak menyesuaikan isi teks */
+  background-color: white;        /* warna kotak */
+  padding: 15px 30px;             /* jarak teks dari tepi kotak */
+  border-radius: 10px;            /* sudut membulat */
+  text-align: center;             /* teks rata tengah */
+  color: #333;                    /* warna teks */
+  margin-bottom: 40px;            /* jarak ke menu cards */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* opsional, agar kotak menonjol */
+}
+
+.menu-header h2 {
+  margin: 0;                      /* hilangkan jarak default */
+  font-size: 32px;
+}
+
+.menu-header h5 {
+  margin: 10px 0 0 0;             /* jarak atas dari h2 */
+  font-size: 16px;
+  font-weight: normal;            /* agar tidak terlalu tebal */
+}
+
+.menu-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  background: white;
+  width: 260px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-card h3 {
+  margin: 15px 0 8px;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.menu-card span {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #ff6b35;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+form {
+  max-width: 420px;
+  margin: 30px auto 0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #ff814f;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* ================= SCROLL ANIMATION ================= */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home img {
+    width: 280px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* BADGE GAMBAR */
+.menu-card {
+  position: relative; 
+  background: white;
+  width: 260px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  transition: 0.3s;
+  top: 65px;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.badge {
+  position: absolute;
+  top: -125px;   
+  left: -70px;  
+  width: 180px; 
+  height: 180px;
+  z-index: 10;
+}
+
+.badge img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Reset margin dan atur font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Home background */
+.home-background {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.home-background::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.home-background h1,
+.home-background p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 10px;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #ff6b35; /* warna background abu muda */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Kontak Telepon Minimalis */
+.phone-simple {
+    display: inline-flex;       /* ikon dan nomor sejajar */
+    align-items: center;
+    gap: 8px;                   /* jarak ikon dan nomor */
+    font-size: 1rem;            /* ukuran teks normal */
+    color: #333;                /* warna teks */
+}
+
+.phone-simple i {
+    font-size: 1.2rem;          /* sedikit lebih besar dari teks */
+    color: #007BFF;             /* warna ikon biru */
+}
+
+body {
+    font-size: 16px; /* dasar */
+}
+
+h1 {
+    font-size: 2rem; /* 2x font dasar, menyesuaikan rem */
+}
+
+.home-background {
+    height: 100vh; /* selalu setinggi layar */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Untuk tablet dan HP */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* teks lebih kecil */
+    }
+
+    .home-background {
+        padding: 20px; /* memberi ruang di layar kecil */
+    }
+
+    .about-us p,
+    .phone-simple {
+        font-size: 0.9rem; /* menyesuaikan teks di bagian lain */
+    }
+}
+
+.about-us .container {
+    display: flex;
+    gap: 20px;
+}
+
+.about-us .text,
+.about-us .image {
+    flex: 1;
+}
+
+/* Responsive HP */
+@media (max-width: 768px) {
+    .about-us .container {
+        flex-direction: column; /* jadi satu kolom */
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Home background full screen */
+.home-background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* About Us */
+.about-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Kontak telepon */
+.phone-simple {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 768px) {
+    .home-background h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p,
+    .phone-simple {
+        font-size: 0.9rem;
+    }
+}
+
+/* ================= TEAM SECTION ================= */
+.team {
+  padding: 80px 40px;
+  text-align: center;
+  background: url("images/bg-tim.jpeg") no-repeat center center;
+  background-size: cover;   /* biar memenuhi seluruh section */
+  color: white;             /* teks tetap terlihat */
+  position: relative;
+}
+
+.team h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: white !important;
+  margin-bottom: 4opx;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* biar lebih kelihatan */
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  width: 180px;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.team-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.team-card h3 {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+}
+/* Container posisi relative */
+.team-card {
+  position: relative;
+  width: 180px;
+  text-align: center;
+}
+
+
+/* Foto di atas background */
+.team-card img {
+  position: relative;
+  z-index: 1;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.team::before {
+  content: "";
+  position: absolute;
+  inset: 0;                 /* top:0; right:0; bottom:0; left:0 */
+  background-color: rgba(0,0,0,0.4); /* gelap transparan */
+  z-index: 0;               /* tetap di bawah foto */
+}
+.chat-order-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 15px;
+  background: #25D366; /* warna WhatsApp */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.chat-order-btn:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
